@@ -1,5 +1,136 @@
+@use './variables' as *;
+
+.blogr {
+  &__hero {
+  }
+
+  &__container {
+  }
+
+  &__header {
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+  }
+
+  &__list {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+  }
+
+  &__item {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+  }
+
+  &__link {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+
+    &--login {
+    }
+  }
+
+  &__sublist {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+  }
+
+  &__subitem {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+  }
+
+  &__sublink {
+    &--primary {
+    }
+
+    &--secondary {
+    }
+  }
+
+  &__btn {
+    &--white {
+    }
+
+    &--outline {
+    }
+  }
+
+  &__heading {
+    &-primary {
+    }
+
+    &-secondary {
+    }
+
+    &-tertiary {
+      &--white {
+      }
+    }
+  }
+
+  &__text {
+  }
+
+  &__btns-wrapper {
+  }
+
+  &__main {
+  }
+
+  &__section-big {
+    &--reverse {
+    }
+  }
+
+  &__img {
+    &--right {
+    }
+
+    &--left {
+    }
+  }
+
+  &__description {
+    &-wrapper {
+    }
+
+    &--grey {
+    }
+
+    &--white {
+    }
+  }
+
+  &__section-small {
+  }
+}
+
 .attribution {
-  color: $color-white;
   font-size: 1rem;
   text-align: center;
   margin-block: 1rem;
@@ -7,7 +138,7 @@
   &__link:link,
   &__link:visited {
     text-transform: uppercase;
-    // color: $color-primary--light;
+    color: $color-primary;
     transition: all 0.2s;
   }
 

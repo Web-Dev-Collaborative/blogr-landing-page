@@ -1,9 +1,4 @@
-$color-primary: ;
-$color-primary--dark: ;
-$color-primary--light: ;
-$color-secondary: ;
-$color-secondary--dark: ;
-$color-secondary--light: ;
+@use './variables' as *;
 
 *,
 *::before,
@@ -48,6 +43,7 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: $font-primary;
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
   line-height: 1.5;

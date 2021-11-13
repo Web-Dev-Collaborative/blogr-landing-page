@@ -1,0 +1,23 @@
+$color-primary: hsl(356, 100%, 66%); // (CTA text)
+$color-primary--dark: hsl(208, 49%, 24%); // (headings)
+$color-primary--light: hsl(355, 100%, 74%); // (CTA hover background)
+$color-secondary: hsl(0, 0%, 100%); // (text)
+$color-secondary--dark: hsl(240, 10%, 16%); // (footer background)
+$color-secondary--light: hsl(240, 2%, 79%); // (footer text)
+$color-tertiary: hsl(207, 13%, 34%); // (body copy)
+
+// Intro/CTA mobile nav
+$gradient-primary: linear-gradient(
+  to right,
+  hsl(13, 100%, 72%),
+  hsl(353, 100%, 62%)
+);
+// body
+$gradient-secondary: linear-gradient(
+  to right,
+  hsl(237, 17%, 21%),
+  hsl(237, 23%, 32%)
+);
+
+$font-primary: 'Overpass', sans-serif; // - Weights: 300, 600
+$font-secondary: 'Ubuntu', sans-serif; // - Weights: 400, 500, 700: for buttons, menu text
