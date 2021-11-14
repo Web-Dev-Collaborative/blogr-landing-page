@@ -5,16 +5,17 @@ $color-secondary: hsl(0, 0%, 100%); // (text)
 $color-secondary--dark: hsl(240, 10%, 16%); // (footer background)
 $color-secondary--light: hsl(240, 2%, 79%); // (footer text)
 $color-tertiary: hsl(207, 13%, 34%); // (body copy)
+$color-tertiary-dark: hsl(235, 23%, 29%);
 
 // Intro/CTA mobile nav
 $gradient-primary: linear-gradient(
-  to right,
+  170deg,
   hsl(13, 100%, 72%),
   hsl(353, 100%, 62%)
 );
-// body
+// Body
 $gradient-secondary: linear-gradient(
-  to right,
+  160deg,
   hsl(237, 17%, 21%),
   hsl(237, 23%, 32%)
 );

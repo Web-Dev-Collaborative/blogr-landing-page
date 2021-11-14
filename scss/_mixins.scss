@@ -1,0 +1,15 @@
+@mixin flex($ai: flex-start, $jc: flex-start, $fld: row, $gap: 0) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  flex-direction: $fld;
+  gap: $gap;
+}
+
+@mixin gradient-primary($angle) {
+  background-image: linear-gradient(
+    $angle,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}

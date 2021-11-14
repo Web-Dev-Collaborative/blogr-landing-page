@@ -24,9 +24,23 @@
   </head>
   <body>
     <section class="blogr__hero" aria-label="hero">
-      <div class="blogr__container">
+      <div class="blogr__container blogr__flex">
         <header class="blogr__header">
-          <img src="./images/logo.svg" alt="Blogr" class="blogr__logo" />
+          <div class="blogr__wrapper">
+            <img src="./images/logo.svg" alt="Blogr" class="blogr__logo" />
+            <button
+              class="blogr__hamburger-btn"
+              aria-expanded="false"
+              aria-label="navigation dropdown menu"
+            >
+              <img
+                src="./images/icon-hamburger.svg"
+                alt=""
+                aria-hidden="true"
+                class="blogr__hamburger"
+              />
+            </button>
+          </div>
 
           <nav class="blogr__nav blogr__nav--primary" aria-label="primary">
             <ul class="blogr__list blogr__list--primary">
@@ -114,20 +128,30 @@
                 </ul>
               </li>
 
-              <li class="blogr__item">
-                <a href="#" class="blogr__link blogr__link--login">Login</a>
-              </li>
-              <li class="blogr__item">
-                <a href="#" class="blogr__btn blogr__btn--white">Sign Up</a>
-              </li>
+              <div class="blogr__btns-wrapper blogr__btns-wrapper--top">
+                <li class="blogr__item blogr__item--primary">
+                  <a
+                    href="#"
+                    class="blogr__link blogr__link--primary blogr__link--login"
+                  >
+                    Login
+                  </a>
+                </li>
+                <li class="blogr__item">
+                  <a
+                    href="#"
+                    class="blogr__btn blogr__btn--white blogr__btn--white-menu"
+                  >
+                    Sign Up
+                  </a>
+                </li>
+              </div>
             </ul>
           </nav>
         </header>
 
         <div class="blogr__heading">
-          <h1 class="blogr__heading blogr__heading-primary">
-            A modern publishing platform
-          </h1>
+          <h1 class="blogr__heading-primary">A modern publishing platform</h1>
           <p class="blogr__text">
             Grow your audience and build your online brand
           </p>
@@ -142,25 +166,25 @@
 
     <main class="blogr__main">
       <section class="blogr__section-big blogr__section-big--reverse">
+        <h2 class="blogr__heading blogr__heading-secondary">
+          Designed for the future
+        </h2>
+
+        <picture aria-hidden="true">
+          <source
+            srcset="./images/illustration-editor-desktop.svg"
+            media="(min-width: 800px)"
+          />
+          <img
+            src="./images/illustration-editor-mobile.svg"
+            alt=""
+            class="blogr__img blogr__img--right"
+          />
+        </picture>
+
         <div class="blogr__container">
-          <h2 class="blogr__heading blogr__heading-secondary">
-            Designed for the future
-          </h2>
-
-          <picture aria-hidden="true">
-            <source
-              srcset="./images/illustration-editor-mobile.svg"
-              media="(min-width: 800px)"
-            />
-            <img
-              src="./images/illustration-editor-desktop.svg"
-              alt=""
-              class="blogr__img blogr__img--right"
-            />
-          </picture>
-
           <div class="blogr__description-wrapper">
-            <h3 class="blogr__heading blogr__heading-tertiaty">
+            <h3 class="blogr__heading blogr__heading-tertiary">
               Introducing an extensible editor
             </h3>
             <p class="blogr__description blogr__description--grey">
@@ -172,7 +196,7 @@
               change the looks of a blog.
             </p>
 
-            <h3 class="blogr__heading blogr__heading-tertiaty">
+            <h3 class="blogr__heading blogr__heading-tertiary">
               Robust content management
             </h3>
             <p class="blogr__description blogr__description--grey">
@@ -186,19 +210,19 @@
       </section>
 
       <section class="blogr__section-small">
-        <div class="blogr__container">
-          <img
-            src="./images/illustration-phones.svg"
-            alt=""
-            aria-hidden="true"
-            class="blogr__img"
-          />
+        <img
+          src="./images/illustration-phones.svg"
+          alt=""
+          aria-hidden="true"
+          class="blogr__img blogr__img--phones"
+        />
 
+        <div class="blogr__container">
           <h3
             class="
               blogr__heading
-              blogr__heading-tertiaty
-              blogr__heading-tertiaty--white
+              blogr__heading-tertiary
+              blogr__heading-tertiary--white
             "
           >
             State of the Art Infrastructure
@@ -213,21 +237,21 @@
       </section>
 
       <section class="blogr__section-big">
-        <div class="blogr__container">
-          <picture aria-hidden="true">
-            <source
-              srcset="./images/illustration-laptop-mobile.svg"
-              media="(min-width: 800px)"
-            />
-            <img
-              src="./images/illustration-laptop-desktop.svg"
-              alt=""
-              class="blogr__img blogr__img--left"
-            />
-          </picture>
+        <picture aria-hidden="true">
+          <source
+            srcset="./images/illustration-laptop-desktop.svg"
+            media="(min-width: 800px)"
+          />
+          <img
+            src="./images/illustration-laptop-mobile.svg"
+            alt=""
+            class="blogr__img blogr__img--left"
+          />
+        </picture>
 
+        <div class="blogr__container">
           <div class="blogr__description-wrapper">
-            <h3 class="blogr__heading blogr__heading-tertiaty">
+            <h3 class="blogr__heading blogr__heading-tertiary">
               Free, open, simple
             </h3>
             <p class="blogr__description blogr__description--grey">
@@ -239,7 +263,7 @@
               learn.
             </p>
 
-            <h3 class="blogr__heading blogr__heading-tertiaty">
+            <h3 class="blogr__heading blogr__heading-tertiary">
               Powerful tooling
             </h3>
             <p class="blogr__description blogr__description--grey">
@@ -254,7 +278,11 @@
 
     <footer class="blogr__footer">
       <div class="blogr__container">
-        <img src="./images/logo.svg" alt="Blogr" class="blogr__logo" />
+        <img
+          src="./images/logo.svg"
+          alt="Blogr"
+          class="blogr__logo blogr__logo--footer"
+        />
 
         <nav class="blogr__nav blogr__nav--secondary" aria-label="secondary">
           <ul class="blogr__list blogr__list--secondary">
@@ -347,16 +375,16 @@
           </ul>
         </nav>
 
-        <p class="attribution">
+        <p class="blogr__attribution">
           Challenge by
           <a
-            class="attribution__link"
+            class="blogr__attribution-link"
             href="https://www.frontendmentor.io?ref=challenge"
             target="_blank"
             >Frontend Mentor</a
           >. Coded by
           <a
-            class="attribution__link"
+            class="blogr__attribution-link"
             href="https://github.com/kens-visuals"
             target="_blank"
             >Kens-Visuals</a
