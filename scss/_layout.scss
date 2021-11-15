@@ -1,0 +1,21 @@
+.blogr {
+  &__container {
+    width: 88%;
+    max-width: 120rem;
+    margin: 0 auto;
+
+    @media (min-width: 810px) {
+      width: 77%;
+    }
+
+    @media (min-width: 1140px) {
+      width: 88%;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

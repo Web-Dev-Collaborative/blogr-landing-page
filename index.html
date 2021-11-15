@@ -165,12 +165,15 @@
     </section>
 
     <main class="blogr__main">
-      <section class="blogr__section-big blogr__section-big--reverse">
-        <h2 class="blogr__heading blogr__heading-secondary">
-          Designed for the future
-        </h2>
+      <h2 class="blogr__heading blogr__heading-secondary">
+        Designed for the future
+      </h2>
 
-        <picture aria-hidden="true">
+      <section class="blogr__section-big blogr__section-big--reverse">
+        <picture
+          aria-hidden="true"
+          class="blogr__picture blogr__picture--right"
+        >
           <source
             srcset="./images/illustration-editor-desktop.svg"
             media="(min-width: 800px)"
@@ -210,12 +213,14 @@
       </section>
 
       <section class="blogr__section-small">
-        <img
-          src="./images/illustration-phones.svg"
-          alt=""
-          aria-hidden="true"
-          class="blogr__img blogr__img--phones"
-        />
+        <div class="img__wrapper">
+          <img
+            src="./images/illustration-phones.svg"
+            alt=""
+            aria-hidden="true"
+            class="blogr__img blogr__img--phones"
+          />
+        </div>
 
         <div class="blogr__container">
           <h3
@@ -237,7 +242,7 @@
       </section>
 
       <section class="blogr__section-big">
-        <picture aria-hidden="true">
+        <picture aria-hidden="true" class="blogr__picture blogr__picture--left">
           <source
             srcset="./images/illustration-laptop-desktop.svg"
             media="(min-width: 800px)"
@@ -278,119 +283,150 @@
 
     <footer class="blogr__footer">
       <div class="blogr__container">
-        <img
-          src="./images/logo.svg"
-          alt="Blogr"
-          class="blogr__logo blogr__logo--footer"
-        />
-
-        <nav class="blogr__nav blogr__nav--secondary" aria-label="secondary">
-          <ul class="blogr__list blogr__list--secondary">
-            <li class="blogr__item blogr__item--secondary">
-              <a href="#" class="blogr__link blogr__link--secondary">
-                Product
-              </a>
-
-              <ul class="blogr__sublist blogr__sublist--secondary">
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Overview
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Pricing
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Marketplace
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Features
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Integrations
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="blogr__item blogr__item--secondary">
-              <a href="#" class="blogr__link blogr__link--secondary">
-                Company
-              </a>
-
-              <ul class="blogr__sublist blogr__sublist--secondary">
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    About
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Team
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Blog
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Careers
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="blogr__item blogr__item--secondary">
-              <a href="#" class="blogr__link blogr__link--secondary">
-                Connect
-              </a>
-
-              <ul class="blogr__sublist blogr__sublist--secondary">
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Contact
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    Newsletter
-                  </a>
-                </li>
-                <li class="blogr__subitem blogr__subitem--secondary">
-                  <a href="#" class="blogr__sublink blogr__sublink--secondary">
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-
-        <p class="blogr__attribution">
-          Challenge by
-          <a
-            class="blogr__attribution-link"
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a
-            class="blogr__attribution-link"
-            href="https://github.com/kens-visuals"
-            target="_blank"
-            >Kens-Visuals</a
-          >.
-        </p>
+        <div class="blogr__footer-wrapper">
+          <img
+            src="./images/logo.svg"
+            alt="Blogr"
+            class="blogr__logo blogr__logo--footer"
+          />
+          <nav class="blogr__nav blogr__nav--secondary" aria-label="secondary">
+            <ul class="blogr__list blogr__list--secondary">
+              <li class="blogr__item blogr__item--secondary">
+                <a href="#" class="blogr__link blogr__link--secondary">
+                  Product
+                </a>
+                <ul class="blogr__sublist blogr__sublist--secondary">
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Overview
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Marketplace
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Features
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Integrations
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blogr__item blogr__item--secondary">
+                <a href="#" class="blogr__link blogr__link--secondary">
+                  Company
+                </a>
+                <ul class="blogr__sublist blogr__sublist--secondary">
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Team
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blogr__item blogr__item--secondary">
+                <a href="#" class="blogr__link blogr__link--secondary">
+                  Connect
+                </a>
+                <ul class="blogr__sublist blogr__sublist--secondary">
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      Newsletter
+                    </a>
+                  </li>
+                  <li class="blogr__subitem blogr__subitem--secondary">
+                    <a
+                      href="#"
+                      class="blogr__sublink blogr__sublink--secondary"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
+      <p class="blogr__attribution">
+        Challenge by
+        <a
+          class="blogr__attribution-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="blogr__attribution-link"
+          href="https://github.com/kens-visuals"
+          target="_blank"
+          >Kens-Visuals</a
+        >.
+      </p>
     </footer>
   </body>
 </html>
