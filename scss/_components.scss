@@ -14,13 +14,13 @@
 
     @media (min-width: 810px) {
       min-height: 63vh;
-      background-size: 260vw;
+      background-size: 260vw, cover;
       background-position: left -50vw top -40vh, center;
       padding-top: 6.5rem;
     }
 
     @media (min-width: 1140px) {
-      background-size: 200vw;
+      background-size: 200vw, cover;
       background-position: left -20vw top -130vh, center;
     }
   }
@@ -564,7 +564,7 @@
     &-link:visited {
       text-transform: uppercase;
       color: $color-primary--light;
-      transition: all 0.2s;
+      transition: all 0.3s;
     }
 
     &-link:hover,

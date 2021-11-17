@@ -78,14 +78,14 @@ body {
 @media (min-width: 810px) {
   .blogr__hero {
     min-height: 63vh;
-    background-size: 260vw;
+    background-size: 260vw, cover;
     background-position: left -50vw top -40vh, center;
     padding-top: 6.5rem;
   }
 }
 @media (min-width: 1140px) {
   .blogr__hero {
-    background-size: 200vw;
+    background-size: 200vw, cover;
     background-position: left -20vw top -130vh, center;
   }
 }
@@ -553,7 +553,7 @@ body {
 .blogr__attribution-link:link, .blogr__attribution-link:visited {
   text-transform: uppercase;
   color: #ff7a85;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .blogr__attribution-link:hover, .blogr__attribution-link:active {
   color: white;
