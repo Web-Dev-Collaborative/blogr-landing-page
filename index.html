@@ -28,8 +28,9 @@
         <header class="blogr__header">
           <div class="blogr__wrapper">
             <img src="./images/logo.svg" alt="Blogr" class="blogr__logo" />
+
             <button
-              class="blogr__hamburger-btn"
+              class="blogr__hamburger-btn js-hamburger"
               aria-expanded="false"
               aria-label="navigation dropdown menu"
             >
@@ -37,18 +38,25 @@
                 src="./images/icon-hamburger.svg"
                 alt=""
                 aria-hidden="true"
-                class="blogr__hamburger"
+                class="blogr__hamburger js-img"
               />
             </button>
           </div>
 
-          <nav class="blogr__nav blogr__nav--primary" aria-label="primary">
+          <nav
+            class="blogr__nav blogr__nav--primary js-nav"
+            aria-label="primary"
+          >
             <ul class="blogr__list blogr__list--primary">
               <li class="blogr__item blogr__item--primary">
-                <a href="#" class="blogr__link blogr__link--primary">
+                <a href="#" class="blogr__link blogr__link--primary js-link">
                   Product
                 </a>
-                <ul class="blogr__sublist blogr__sublist--primary">
+
+                <ul
+                  aria-expanded="false"
+                  class="blogr__sublist blogr__sublist--primary js-sublist"
+                >
                   <li class="blogr__subitem blogr__subitem--primary">
                     <a href="#" class="blogr__sublink blogr__sublink--primary">
                       Overview
@@ -78,10 +86,13 @@
               </li>
 
               <li class="blogr__item blogr__item--primary">
-                <a href="#" class="blogr__link blogr__link--primary">
+                <a href="#" class="blogr__link blogr__link--primary js-link">
                   Company
                 </a>
-                <ul class="blogr__sublist blogr__sublist--primary">
+                <ul
+                  aria-expanded="false"
+                  class="blogr__sublist blogr__sublist--primary js-sublist"
+                >
                   <li class="blogr__subitem blogr__subitem--primary">
                     <a href="#" class="blogr__sublink blogr__sublink--primary">
                       About
@@ -106,10 +117,13 @@
               </li>
 
               <li class="blogr__item blogr__item--primary">
-                <a href="#" class="blogr__link blogr__link--primary">
+                <a href="#" class="blogr__link blogr__link--primary js-link">
                   Connect
                 </a>
-                <ul class="blogr__sublist blogr__sublist--primary">
+                <ul
+                  aria-expanded="false"
+                  class="blogr__sublist blogr__sublist--primary js-sublist"
+                >
                   <li class="blogr__subitem blogr__subitem--primary">
                     <a href="#" class="blogr__sublink blogr__sublink--primary">
                       Contact
@@ -185,30 +199,30 @@
           />
         </picture>
 
-        <div class="blogr__container">
-          <div class="blogr__description-wrapper">
-            <h3 class="blogr__heading blogr__heading-tertiary">
-              Introducing an extensible editor
-            </h3>
-            <p class="blogr__description blogr__description--grey">
-              Blogr features an exceedingly intuitive interface which lets you
-              focus on one thing: creating content. The editor supports
-              management of multiple blogs and allows easy manipulation of
-              embeds such as images, videos, and Markdown. Extensibility with
-              plugins and themes provide easy ways to add functionality or
-              change the looks of a blog.
-            </p>
+        <div
+          class="blogr__description-wrapper blogr__description-wrapper--left"
+        >
+          <h3 class="blogr__heading blogr__heading-tertiary">
+            Introducing an extensible editor
+          </h3>
+          <p class="blogr__description">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
 
-            <h3 class="blogr__heading blogr__heading-tertiary">
-              Robust content management
-            </h3>
-            <p class="blogr__description blogr__description--grey">
-              Flexible content management enables users to easily move through
-              posts. Increase the usability of your blog by adding customized
-              categories, sections, format, or flow. With this functionality,
-              you’re in full control.
-            </p>
-          </div>
+          <h3 class="blogr__heading blogr__heading-tertiary">
+            Robust content management
+          </h3>
+          <p class="blogr__description">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
         </div>
       </section>
 
@@ -222,7 +236,7 @@
           />
         </div>
 
-        <div class="blogr__container">
+        <div class="blogr__container blogr__container--small">
           <h3
             class="
               blogr__heading
@@ -254,29 +268,29 @@
           />
         </picture>
 
-        <div class="blogr__container">
-          <div class="blogr__description-wrapper">
-            <h3 class="blogr__heading blogr__heading-tertiary">
-              Free, open, simple
-            </h3>
-            <p class="blogr__description blogr__description--grey">
-              Blogr is a free and open source application backed by a large
-              community of helpful developers. It supports features such as code
-              syntax highlighting, RSS feeds, social media integration,
-              third-party commenting tools, and works seamlessly with Google
-              Analytics. The architecture is clean and is relatively easy to
-              learn.
-            </p>
+        <div
+          class="blogr__description-wrapper blogr__description-wrapper--right"
+        >
+          <h3 class="blogr__heading blogr__heading-tertiary">
+            Free, open, simple
+          </h3>
+          <p class="blogr__description">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
 
-            <h3 class="blogr__heading blogr__heading-tertiary">
-              Powerful tooling
-            </h3>
-            <p class="blogr__description blogr__description--grey">
-              Batteries included. We built a simple and straightforward CLI tool
-              that makes customization and deployment a breeze, but capable of
-              producing even the most complicated sites.
-            </p>
-          </div>
+          <h3 class="blogr__heading blogr__heading-tertiary">
+            Powerful tooling
+          </h3>
+          <p class="blogr__description">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
         </div>
       </section>
     </main>

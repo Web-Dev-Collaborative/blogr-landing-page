@@ -4,12 +4,12 @@
     max-width: 120rem;
     margin: 0 auto;
 
-    @media (min-width: 810px) {
-      width: 77%;
+    &--small {
+      margin: 0 0 0 2rem;
     }
 
-    @media (min-width: 1140px) {
-      width: 88%;
+    @media (min-width: 810px) {
+      width: 77%;
     }
   }
 
