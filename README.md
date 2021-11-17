@@ -1,4 +1,4 @@
-# Frontend Mentor - Blogr Landing Page solution
+# Frontend Mentor - Blogr Landing Page Solution
 
 This is a solution to the [Blogr Landing Page Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
 
