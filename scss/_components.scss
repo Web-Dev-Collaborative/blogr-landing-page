@@ -187,6 +187,16 @@
     }
 
     &--login {
+      width: 100%;
+      padding-top: 2rem;
+      border-top: 1px solid $color-secondary--light;
+
+      @media (min-width: 1140px) {
+        width: unset;
+        padding: 0;
+        border: 0;
+      }
+
       &::after {
         content: '';
       }
@@ -319,19 +329,17 @@
   &__btns-wrapper {
     &--top {
       width: 85%;
-      border-top: 1px solid $color-secondary--light;
       margin: 0 auto;
-      padding-top: 2rem;
-      display: block;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 2rem;
 
       @media (min-width: 1140px) {
         border-top: unset;
         margin: 0;
-        padding-top: 0;
-        display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: end;
-        gap: 2rem;
       }
     }
   }

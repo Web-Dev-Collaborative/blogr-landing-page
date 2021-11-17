@@ -6,11 +6,11 @@ const links = document.querySelectorAll('.js-link');
 const setSublistState = function () {
   if (!nav.classList.contains('open-nav')) {
     nav.classList.add('open-nav');
-    img.src = '../images/icon-close.svg';
+    img.src = './images/icon-close.svg';
     hamburgerBtn.setAttribute('aria-expanded', 'true');
   } else {
     nav.classList.remove('open-nav');
-    img.src = '../images/icon-hamburger.svg';
+    img.src = './images/icon-hamburger.svg';
     hamburgerBtn.setAttribute('aria-expanded', 'false');
   }
 };

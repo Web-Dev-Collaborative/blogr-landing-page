@@ -239,6 +239,18 @@ body {
     font-size: 1.4rem;
   }
 }
+.blogr__link--login {
+  width: 100%;
+  padding-top: 2rem;
+  border-top: 1px solid #c8c8cb;
+}
+@media (min-width: 1140px) {
+  .blogr__link--login {
+    width: unset;
+    padding: 0;
+    border: 0;
+  }
+}
 .blogr__link--login::after {
   content: "";
 }
@@ -340,20 +352,18 @@ body {
 }
 .blogr__btns-wrapper--top {
   width: 85%;
-  border-top: 1px solid #c8c8cb;
   margin: 0 auto;
-  padding-top: 2rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 @media (min-width: 1140px) {
   .blogr__btns-wrapper--top {
     border-top: unset;
     margin: 0;
-    padding-top: 0;
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: end;
-    gap: 2rem;
   }
 }
 .blogr__btn:link, .blogr__btn:visited {
