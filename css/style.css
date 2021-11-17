@@ -348,6 +348,7 @@ body {
 @media (min-width: 1140px) {
   .blogr__btns-wrapper--top {
     border-top: unset;
+    margin: 0;
     padding-top: 0;
     display: flex;
     align-items: center;
